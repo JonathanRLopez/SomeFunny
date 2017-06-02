@@ -1,0 +1,213 @@
+.containerView {
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerHeaven {
+  background: linear-gradient(#add8e6 70%, #79798e);
+  position: relative;
+  width: 100%;
+  height: 65vh;
+}
+
+.cloudIcon2 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 120px;
+  opacity: 0.6;
+  animation-name: cloud2;
+  animation-duration: 80s;
+  //animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.cloudIcon {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 0;
+  animation-name: cloud1;
+  animation-duration: 100s;
+  //animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.aves {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation-name: avesAnimation;
+  animation-duration: 40s;
+  //animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.fight {
+  width: 100px;
+  position: absolute;
+  top: 80%;
+  left: 95px;
+  animation-name: avesAnimation;
+  animation-duration: 70s;
+  //animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.ship {
+  width: 210px;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  animation-name: avesAnimation;
+  animation-duration: 70s;
+  //animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.circle {
+  width: 100px;
+  background: pink;
+  border-radius: 50%;
+  padding: 50px 0;
+  cursor: pointer;
+  color: white;
+  line-height: 0;
+  margin: 20px auto;
+  transition: background 1s, transform 2s 0.3s ease-in;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
+}
+
+/*  this part is about the grass */
+.grassContainer {
+  background: seagreen;
+  width: 100%;
+  height: 25vh;
+  position: relative;
+}
+
+.tree1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+}
+
+.tree2 {
+  position: absolute;
+  width: 120px;
+  top: -12%;
+  left: 20%;
+  animation-name: treeSepia;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-delay: 80s;
+}
+
+.tree2-1 {
+  position: absolute;
+  width: 120px;
+  top: -12%;
+  left: 40%;
+}
+
+@keyframes treeSepia {
+  from {filter: sepia(0);}
+  to {filter: sepia(0.8);}
+}
+
+
+.tree2-2 {
+  position: absolute;
+  width: 120px;
+  top: -12%;
+  left: 60%;
+}
+
+/* this part is about the road */
+
+.roadContainer {
+  height: 10vh;
+  background: dimgrey;
+  position: relative;
+  border-top: 2px solid darkgray;
+  border-bottom: 6px solid darkgray;
+}
+
+.linesRoad {
+  position: absolute;
+  top: 28%;
+  height: 2;
+  width: 100%;
+  border: 2px dashed white;
+
+}
+
+.policeCar {
+  position: absolute;
+  top: -112%;
+  left: 0px;
+  width: 120px;
+  animation-name: police;
+  animation-duration: 10s;
+  //animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.greenCar {
+  position: absolute;
+  top: -40%;
+  left: 0px;
+  width: 120px;
+  animation-name: badCar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes police {
+  from {
+    transform: translateX(-130px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes badCar {
+  from {
+    transform: translateX(-130px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes cloud1 {
+  from {
+    transform: translateX(-130px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes cloud2 {
+  from {
+    transform: translateX(-130px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+@keyframes avesAnimation {
+  from {
+    transform: translateX(-110px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
